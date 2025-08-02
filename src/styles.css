@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

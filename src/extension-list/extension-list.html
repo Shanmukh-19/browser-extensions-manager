@@ -1,0 +1,24 @@
+<div class="header">
+    <h3 [class.h3-color]="isDarkTheme">Extensions List</h3>
+    <div class="filter-buttons">
+        <button class="all" [class.clicked] ="filterType === 'all'" (click)="filterExtensions('all')" [class.card-color]="isDarkTheme">All</button>
+        <button class="active" [class.clicked] ="filterType === 'active'" (click)="filterExtensions('active')" [class.card-color]="isDarkTheme">Active</button>
+        <button class="inactive" [class.clicked] ="filterType === 'inactive'" (click)="filterExtensions('inactive')" [class.card-color]="isDarkTheme">Inactive</button>
+    </div>
+</div>
+
+<div class = "List">
+    <div *ngFor="let item of data" class = "card" [class.card-color]="isDarkTheme">
+            <div class = "card-head">
+                <img [src]=item.logo [alt]=item.name class="extension-logo" />
+                <div class="extension-info">
+                    <h5 [class.card-head-color]="isDarkTheme">{{item.name}}</h5>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            <div class="extension-actions">
+                <button class = "remove" [class.remove-color]="isDarkTheme" (click)="removeExtension(item.name)">Remove</button>
+                <mat-slide-toggle [(ngModel)]=item.isActive class="clean-toggle" color = "warn"></mat-slide-toggle>
+            </div>
+    </div>
+</div>

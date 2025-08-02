@@ -1,0 +1,5 @@
+<div class="input-wrapper" [class.input-icon-white]="isDarkTheme">
+  <img src="images/logo.svg" class="input-icon" alt="Logo" />
+  <div class="theme-icon" [class.button-color]="isDarkTheme"><button [class.button-color]="isDarkTheme"><img [src]="img" alt="Sun/Moon Icon" (click)="toggleTheme()"/></button></div>
+</div>
+<app-extension-list [isDarkTheme]="isDarkTheme"></app-extension-list>

@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Browser Extension Manager]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/browser-extensions-manager-paOzCG5IJp))
+- Live Site URL: [Browser Extension Manager]([https://your-live-site-url.com](https://shanmukh-19.github.io/browser-extensions-manager/))
 
 ### Built with
 
